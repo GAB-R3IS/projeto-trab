@@ -1,4 +1,4 @@
-// ── Tema claro/escuro ──────────────────────────────────────────────
+
 const btn = document.getElementById('temaBtn');
 
 btn.addEventListener('click', function () {
@@ -7,7 +7,7 @@ btn.addEventListener('click', function () {
   updateCubeColors();
 });
 
-// ── Canvas de cubos isométricos ────────────────────────────────────
+
 const canvas = document.getElementById('cubes-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -22,7 +22,6 @@ function resize() {
 resize();
 window.addEventListener('resize', resize);
 
-// ── Cursor personalizado ───────────────────────────────────────────
 const cursorEl = document.getElementById('custom-cursor');
 
 window.addEventListener('mousemove', function (e) {
@@ -32,7 +31,6 @@ window.addEventListener('mousemove', function (e) {
   cursorEl.style.top = e.clientY + 'px';
 });
 
-// ── Cores dos cubos ────────────────────────────────────────────────
 let cubeColorStroke = 'rgba(220,38,38,0.18)';
 let cubeColorFill   = 'rgba(220,38,38,0.04)';
 let cubeColorBright = 'rgba(220,38,38,0.55)';
@@ -143,7 +141,6 @@ function animate() {
 
 animate();
 
-// ── Efeito glitch nas letras ───────────────────────────────────────
 const glitchFonts = [
   "'Courier New', monospace",
   "'Georgia', serif",
@@ -199,7 +196,7 @@ function runGlitch() {
 
 setTimeout(runGlitch, 2000);
 
-// ── Scroll observer para animar seções ────────────────────────────
+
 const sections = document.querySelectorAll('section');
 
 const observer = new IntersectionObserver(
